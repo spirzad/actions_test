@@ -31,10 +31,17 @@ jobs:
         with:
           token: ${{ secrets.API_TOKEN }}
           repository: spirzad/python-application
+          path: runner
+          
+      - name: Second repo
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.API_TOKEN }}
+          repository: cheekety/template_test
           path: run
       
       - name: Test Run
-        uses: ./run/.github/workflows/main.yml
+        uses: ./run/
 
       # Runs a single command using the runners shell
 #       - name: View
