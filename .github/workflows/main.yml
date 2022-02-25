@@ -33,9 +33,9 @@ jobs:
           repository: spirzad/python-application
           path: run
       
-#       - name: Test Run
-#         uses: ./
+      - name: Test Run
+        uses: ./run/.github/workflows/main.yml
 
       # Runs a single command using the runners shell
-      - name: View
-        run: pwd && ls -al
+#       - name: View
+#         run: pwd && ls -al
