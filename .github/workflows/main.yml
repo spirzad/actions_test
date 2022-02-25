@@ -31,6 +31,11 @@ jobs:
         with:
           token: ${{ secrets.API_TOKEN }}
           repository: spirzad/python-application
+      
+      - name: Test Run
+        uses: spirzad/python-application@main
+        with:
+          token: ${{ secrets.API_TOKEN }}
 
       # Runs a single command using the runners shell
       - name: View
