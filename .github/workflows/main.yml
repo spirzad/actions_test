@@ -23,6 +23,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         
+      - name: View
+        run: ls -al
+        
       - name: Second repo
         uses: actions/checkout@v2
         with:
