@@ -45,6 +45,9 @@ jobs:
       
       - name: View In Run
         run: ls -al run/
+        
+      - name: Test Run
+        uses: ./run/
 
       # Runs a single command using the runners shell
 #       - name: View
