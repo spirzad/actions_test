@@ -38,7 +38,6 @@ jobs:
         with:
           token: ${{ secrets.API_TOKEN }}
           repository: cheekety/template_test
-          path: run
       
       - name: View
         run: ls -al
@@ -47,7 +46,7 @@ jobs:
         run: ls -al run/
         
       - name: Test Run
-        uses: ./run/
+        uses: ./
 
       # Runs a single command using the runners shell
 #       - name: View
