@@ -24,7 +24,7 @@ jobs:
         uses: actions/checkout@v2
         
       - name: View
-        run: ls -al
+        run: pwd && ls -al
         
       - name: Second repo
         uses: actions/checkout@v2
@@ -32,9 +32,9 @@ jobs:
           token: ${{ secrets.API_TOKEN }}
           repository: spirzad/python-application
       
-      - name: Test Run
-        uses: ./
+#       - name: Test Run
+#         uses: ./
 
       # Runs a single command using the runners shell
       - name: View
-        run: ls -al
+        run: pwd && ls -al
