@@ -43,7 +43,9 @@ jobs:
         run: ls -al
         
       - name: Test Run
-        uses: ./
+        run: |
+          cd runner
+          ls -lrt
 
       # Runs a single command using the runners shell
 #       - name: View
